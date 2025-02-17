@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+}
+
+.menu {
+    text-align: center;
+    background-color:black;
+    padding: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+img{
+    width: 10%;
+}
