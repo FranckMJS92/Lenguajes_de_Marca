@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    border: solid;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+}
+
+h1{
+    background-color: green;
+}
+
+label{
+    margin: 5px;
+}
+
+input{
+    width: 150px;
+    margin: 5px;
+}
+
+button{
+    color: white;
+    background-color: green;
+    width: 25%;
+    margin-top: 20px;
+    padding: 5px;
+    
+}
