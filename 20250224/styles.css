@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+}
+
+/* @media (max-width:768px){
+    body {
+        background-color: rgb(238, 49, 49);
+    }
+} */
