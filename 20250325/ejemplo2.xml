@@ -1,1 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <director>Steven Spielberg</director>
+    <pelicula1>E.T.</pelicula1>
+    <pelicula1>Jurassic Park</pelicula1>
+    <pelicula1>la Lista de Schrindler</pelicula1>
+    <pelicula1>Back to the future</pelicula1>
+    <pelicula1>Gremlings</pelicula1>
+    <pelicula1>Indiana Jones</pelicula1>
+    <pelicula1>Twister</pelicula1>
+    <pelicula1>Tiburon</pelicula1>
+</catalogo>
