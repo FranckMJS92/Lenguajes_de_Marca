@@ -1,5 +1,5 @@
 # Lenguajes de Marca
- HTML Clases
+ HTML
  CSS
  Javascript
  XML
