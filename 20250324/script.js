@@ -25,21 +25,16 @@ function calculoEcuacion() {
     const b = parseFloat(document.getElementById("b").value);
     const c = parseFloat(document.getElementById("c").value);
 
-    //console.log("Constantes ingresadas :" ,a,b,c);
-
     const x1 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
 
     const x2 = (- b - Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
 
-
-
     console.log("Resultado de la primera raiz", x1);
     console.log("Resultado de la segunda raiz", x2);
 
-    document.getElementById("raiz1").textContent = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
-    document.getElementById("raiz2").textContent = x2;
+    document.getElementById("raiz1").textContent = x1.toFixed(2);
+    document.getElementById("raiz2").textContent = x2.toFixed(2);
 
-    //document.getElementById("raiz1").textContent = `x1 = ${x1.toFixed(2)}, x2 = ${x2.toFixed(2)}`;
 }
 
 //FUNCION LIMPIAR
