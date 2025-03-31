@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD (Document Type Definition) interno
+Se hacen las vlidaciones en el mismo documento-->
+<!DOCTYPE empleados [
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre, apellido, salario)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+]>
+<empleados>
+    <empleado>
+        <nombre>Luis</nombre>
+        <apellido>Sanchez</apellido>
+        <salario>1000</salario>
+    </empleado>
+</empleados>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD Externo (Se hace las validacioes en otro archivo DTD) -->
+
+<!DOCTYPE empleados SYSTEM "DTDexterno.dtd">
+<empleados>
+    <empleado>
+        <nombre>Luis</nombre>
+        <apellido>Sanchez</apellido>
+        <salario>1000</salario>
+    </empleado>
+</empleados>
