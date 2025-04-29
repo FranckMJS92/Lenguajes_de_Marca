@@ -1,0 +1,36 @@
+eventos:
+  - nombre: Salinas
+    fecha: 2025-07-31
+    ubicacion:
+      ciudad: Almeria
+      lugar: Recinto ferial
+    precio: 70
+    gratiuto: false
+    categoriasMusica:
+      - Indie
+      - Pop
+      - Electro
+    artistas:
+      - nombre: Bisbal
+        tipoMusica: Pop
+      - nombre: DjNano
+        tipoMusica: Electro
+    estado: null
+  - nombre: Salinas
+    fecha: 2025-07-31
+    ubicacion:
+      ciudad: Almeria
+      lugar: Recinto ferial
+    precio: 70
+    gratiuto: false
+    categoriasMusica:
+      - Indie
+      - Pop
+      - Electro
+    artistas:
+      - nombre: Bisbal
+        tipoMusica: Pop
+      - nombre: DjNano
+        tipoMusica: Electro
+    estado: null
+#Lista de concierto

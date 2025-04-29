@@ -1,0 +1,17 @@
+{
+    "nombreConcierto": "Cosa Nuestra",
+    "fecha": "05-07-2025",
+    "ubicacion": {
+        "ciudad": "Madrid",
+        "lugar": "Movistar Arena"
+    },
+    "precio": 100,
+    "gratutio": false,
+    "playlist": [
+        "Cosa Nuestra",
+        "Pasaporte",
+        "Dejame Entrar"
+    ],
+    "artista": "Raw Alejandro",
+    "estado": "Confirmado"
+}

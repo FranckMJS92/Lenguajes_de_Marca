@@ -1,0 +1,17 @@
+{
+    "empresa": "TechPro",
+    "empleados": [
+        {
+            "nombre": "Luis",
+            "departamento": "Desarrollo"
+        },
+        {
+            "nombre": "Marta",
+            "departamento": "Diseño"
+        }
+    ],
+    "activa": true
+}
+
+  empleados[1].nombre
+  empleados[0].departamento

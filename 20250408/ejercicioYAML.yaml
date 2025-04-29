@@ -1,0 +1,13 @@
+nombreConcierto: Cosa nuestra
+fecha: 05-07-2025
+ubicacion:
+  - Ciudad: Madrid
+  - Lugar: Movistar Arena
+precio: 100
+gratuito: false
+playlist:
+  - Cosa Nuestra
+  - Pasaporte
+  - Dejaem Entrar
+artista: Raw Alejandro
+estado: confirmado

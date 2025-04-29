@@ -1,0 +1,34 @@
+usuarios:
+  - nombre: Luis
+    edad: 29
+    activo: true
+    hobbies:
+      - deporte
+      - viajar
+      - dormir
+    direccion:
+      calle: Desengaño
+      numero: 21
+      ciudad:
+        limpia: true
+        habitantes: 2000000
+    telefono: null
+  - nombre: Pepe
+    edad: 43
+    activo: true
+    hobbies:
+      - dormir
+    direccion:
+      calle: "Desengaño"
+      numero: 21
+      ciudad:
+        limpia: true
+        habitantes: 2000000
+    telefono: 693293292
+# Tipos de datos:
+# Cadenas de texto (string) "nombre": "Luis" Siempre entre comillas dobles
+# Números "edad": 29 Enteros , decimales..
+# Booleano "activo": true True o falte Siempre sin comillas dobles.
+# Array (lista)"hobbies": ["Deporte", "Videojuegos", "Dormir"] Lista de valores
+# Objetos "direccion": { "calle": "Desengaño", "numero": 21, "ciudad": "Madrid"} Conjunto de valores con Clave-Valor
+# Null "telefono": null Representa un valor nulo o desconocido.

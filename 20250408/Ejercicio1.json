@@ -1,0 +1,56 @@
+{
+    "eventos": [
+        {
+            "nombreConcierto": "Salinas",
+            "fecha": "2025-07-31",
+            "ubicacion": {
+                "ciudad": "Almeria",
+                "lugar": "Recinto ferial"
+            },
+            "precio": 70,
+            "gratuito": false,
+            "categoriasMusica": [
+                "Indie",
+                "Pop",
+                "Electro"
+            ],
+            "artistas": [
+                {
+                    "nombre": "Bisbal",
+                    "tipoMusica": "Pop"
+                },
+                {
+                    "nombre": "DjNano",
+                    "tipoMusica": "Electro"
+                }
+            ],
+            "estado": null
+        },
+        {
+            "nombreConcierto": "Salinas",
+            "fecha": "2025-07-31",
+            "ubicacion": {
+                "ciudad": "Almeria",
+                "lugar": "Recinto ferial"
+            },
+            "precio": 70,
+            "gratuito": false,
+            "categoriasMusica": [
+                "Indie",
+                "Pop",
+                "Electro"
+            ],
+            "artistas": [
+                {
+                    "nombre": "Bisbal",
+                    "tipoMusica": "Pop"
+                },
+                {
+                    "nombre": "DjNano",
+                    "tipoMusica": "Electro"
+                }
+            ],
+            "estado": null
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": 1234,
+    "fecha": "2025-04-07",
+    "cliente": {
+        "nombre": "Julio",
+        "email": "julio@email.com",
+        "direccion": {
+            "calle": "calle Desengaño",
+            "ciudad": "Madrid",
+            "codigoPostal": 30290
+        }
+    },
+    "podructos": [
+        {
+            "nombre": "play5",
+            "cantidad": 2,
+            "precio": 500
+        },
+        {
+            "nombre": "switch2",
+            "cantidad": 1,
+            "precio": 470
+        }
+    ],
+    "tipoEnvio": true,
+    "estado": null,
+    "total": 1470
+}
