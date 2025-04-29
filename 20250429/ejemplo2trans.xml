@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Plantilla principal: raiz del documento -->
+    <xsl:template match="/">
+        <html>
+            <body>
+                <h2>Lista de persona</h2>
+
+                <!-- Recorremos cada persona -->
+                <xsl:for-each select="personas/persona">
+                    <p>Nombre: <xsl:value-of select="nombre" /></p>
+                    <p>Edad: <xsl:value-of select ="edad" /></p>
+                </xsl:for-each>
+            </body>
+
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

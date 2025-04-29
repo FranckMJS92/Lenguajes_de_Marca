@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo>
+    <libro categoria="novela">
+        <titulo>Don Quijote</titulo>
+        <autor>Don Miguel de Cervantes Saavedra</autor>
+        <precio>10.00</precio>
+    </libro>
+    <libro categoria="historia">
+        <titulo>El apagon</titulo>
+        <autor>Ciberataque</autor>
+        <precio>15.00</precio>
+    </libro>
+    <libro categoria="ciencia">
+        <titulo>Energias</titulo>
+        <autor>Sergio</autor>
+        <precio>17.00</precio>
+    </libro>
+</catalogo>
+
+1. Obtener todos los titulos de los libros del catalogo
+//titulo
+
+2. Obtener autor del segundo libro
+/catalogo/libro[2]/autor
+
+3. Obtener los titulos de los libros con precio mayor a 11
+//libro[precio > 11]/titulo
+
+4. Obtener los librros con categoria "ciencia"
+//libros[categoria="ciencia"]
