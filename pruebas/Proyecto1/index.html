@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Francisco Adolfo Lopez Monrroy</title>
+        <link rel="icon" href="futbol-americano.png" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: white;
+                font-family: "Poppins", serif;
+                background-image: url(background.png);
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .contenedor {
+                width: 1200px;
+                margin: auto;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .titulo {
+                text-align: center;
+                margin: 20px 0 0px 0;
+                font-size: 5em;
+                letter-spacing: 10px;
+            }
+            a {
+                margin: 50px;
+                font-weight: bold;
+                font-size: 1.4em;
+                text-decoration: none;
+            }
+            .titulo, /*Efecto de brillo -  titulo y enlace interno*/
+            a:hover {
+                text-shadow:
+                    0 0 10px silver,
+                    0 0 20px gold,
+                    0 0 40px silver,
+                    0 0 80px gold;
+            }
+            h2 {
+                /*Efecto de brillo -  titulares de secciones*/
+                padding-bottom: 20px;
+                text-shadow:
+                    0 0 10px cyan,
+                    0 0 20px cyan,
+                    0 0 40px cyan,
+                    0 0 80px cyan;
+            }
+            header {
+                /*Estilo de borde y enlace estatico para cabecera*/
+                text-align: center;
+                position: sticky;
+                border: solid white;
+                border-radius: 10px;
+                top: 0;
+                left: 0;
+            }
+            article {
+                padding-top: 40px; /*Espacio en la parte superior del section*/
+                text-align: justify; /*Texto Justificado*/
+            }
+            li,
+            p {
+                /*Espaciado para etiquetas p y li*/
+                margin-bottom: 15px;
+                font-size: 1.2em;
+            }
+            /*ESTILOS DE LAS SECCIONES*/
+            #Historia,
+            #Premio,
+            #Favoritos,
+            #Lugar {
+                /*Anchura y alineado de las secciones*/
+                width: 800px;
+                margin: auto;
+            }
+            /*ANIMACION GALERIA Y MAQUETADO CON FLOAT*/
+            .filagaleria {
+                overflow: hidden;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .columnagaleria {
+                text-align: center;
+                width: 23%;
+                float: left;
+                padding: 10px;
+            }
+            div img {
+                width: 125px;
+                border: 2px solid gold;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 30px;
+                transition: all ease-in-out 0.8s;
+                cursor: pointer;
+                margin: 0 3px;
+                background: white;
+            }
+            div img:hover {
+                filter: saturate(100%);
+                width: 125%;
+            }
+        </style>
+    </head>
+    <body class="contenedor">
+        <header>
+            <nav>
+                <a href="#Historia">Historia</a>
+                <a href="#Premio">¡El Premio!</a>
+                <a href="#Favoritos">Favoritos</a>
+                <a href="#Lugar">Lugar</a>
+                <a href="https://es.uefa.com/uefachampionsleague/" target="blank">¡Conoce más!</a>
+            </nav>
+        </header>
+        <h1 class="titulo">FINAL UEFA CHAMPIONS LEAGUE 2024-2025</h1>
+        <article id="Historia">
+            <h2>HISTORIA</h2>
+            <p>
+                Se hará historia cuando se celebre en el Munich Football Arena la final de la UEFA Champions League
+                2024/25, la competición de clubes más prestigiosa del fútbol mundial. Lo más destacado del calendario de
+                clubes del fútbol europeo regresa a la ciudad alemana por primera vez desde 2012.
+            </p>
+            <ul>
+                <li>
+                    La construcción del Munich Football Arena tardó menos de tres años de principio a fin y se completó
+                    el 30 de abril de 2005. Fue concebido tras un referéndum en octubre de 2001, cuando el 65,8% de los
+                    ciudadanos de Munich votaron a favor de construir un nuevo estadio en lugar de regenerar el
+                    Olympiastadion, sede de los Juegos Olímpicos de verano de 1972.
+                </li>
+                <li>
+                    Situado en Werner-Heisenberg-Allee (que lleva el nombre del famoso físico atómico alemán y premio
+                    Nobel de Física de 1932 Werner Heisenberg) y construido por los rivales locales Bayern München y
+                    1860 München, el Munich Football Arena se inauguró en mayo de 2005, aunque desde entonces el Bayern
+                    ha tomado propiedad total del estadio.
+                </li>
+                <li>
+                    El campo acogió el partido inaugural de la Copa Mundial de la FIFA 2006 entre Alemania y Costa Rica
+                    antes de albergar tres partidos más del grupo, así como una eliminatoria de octavos de final y la
+                    victoria de Francia en semifinales contra Portugal.
+                </li>
+            </ul>
+            <img src="allianz-arena.png" width="100%" />
+            <ul>
+                <li>
+                    El estadio ha vivido una buena cantidad de drama desde que abrió sus puertas por primera vez, entre
+                    ellos la final de la Liga de Campeones de 2012, cuando el Chelsea desafió la ventaja de jugar en
+                    casa para vencer al Bayern en los penales.
+                </li>
+
+                <li>
+                    El Munich Football Arena acogió tres partidos de la fase de grupos de la UEFA EURO 2020, en todos
+                    ellos con Alemania, además de la victoria de Italia por 2-1 en cuartos de final contra Bélgica.
+                </li>
+                <li>
+                    Dado que es sede de la UEFA EURO 2024, es el primer estadio de la historia que alberga partidos de
+                    Campeonatos Europeos de la UEFA consecutivos. Su capacidad para ese torneo será de 66.000 personas.
+                </li>
+                <li>
+                    La pared exterior transparente del estadio está compuesta por paneles de aluminio que se iluminan
+                    desde el interior y pueden cambiar de color dependiendo de quién juegue.
+                </li>
+                <li>
+                    El Olympiastadion acogió tres finales de la Copa de Europa. El gol de Trevor Francis le valió la
+                    victoria al Nottingham Forest contra Malmö en 1979 y también hubo un solo gol 14 años después,
+                    cuando el Marsella venció al AC Milan para conquistar el título inaugural de la Liga de Campeones de
+                    la UEFA. En 1997, dos goles de Karl-Heinz Riedle encaminaron al Borussia Dortmund hacia la victoria
+                    por 3-1 contra la Juventus.
+                </li>
+            </ul>
+        </article>
+        <article id="Premio">
+            <h2>¿QUE OBTIENEN LOS GANADORES?</h2>
+            <p>
+                El trofeo de la UEFA Champions League mide 73,5 cm de alto y pesa 7,5 kg. "Puede que no sea una obra
+                maestra del arte, pero todo el mundo en el fútbol está ansioso por tenerla en sus manos", afirmó su
+                creador Jürg Stadelmann. Los ganadores obtendrán el derecho a jugar contra los ganadores de la UEFA
+                Europa League 2024/25 en la Supercopa de la UEFA de 2025. También obtendrán una plaza en la fase liguera
+                de la UEFA Champions League 2025/26, si no se han clasificado a través de su competición nacional.
+            </p>
+            <img src="trofeo.png" alt="Trofeo de la UEFA Champions League" />
+        </article>
+        <article id="Favoritos">
+            <h2>EQUIPOS FAVORITOS AL TROFEO DE LA UEFA CHAMPIONS LEAGUE</h2>
+            <div class="filagaleria">
+                <div class="columnagaleria">
+                    <h3>Real Madrid</h3>
+                    <img src="real-madrid.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Barcelona</h3>
+                    <img src="barca.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Milan</h3>
+                    <img src="milan.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Inter de Milan</h3>
+                    <img src="inter-de-Milan.png" alt="" />
+                </div>
+            </div>
+            <div class="filagaleria">
+                <div class="columnagaleria">
+                    <h3>Bayern Leverkusen</h3>
+                    <img src="bayer-leverkusen.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Bayern Munich</h3>
+                    <img src="bayer-munich.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Liverpool</h3>
+                    <img src="liverpool.png" alt="" />
+                </div>
+                <div class="columnagaleria">
+                    <h3>Manchester City</h3>
+                    <img src="manchester-city.png" alt="" />
+                </div>
+            </div>
+        </article>
+        <article id="Lugar">
+            <h2>MUNICH, ALEMANIA - ALLIANZ ARENA STADIUM</h2>
+            <p>
+                El 31 de mayo del 2025 será la final de la UEFA Champions League en la ciudad de Munich bajo los
+                reflectores del maravilloso estadio Allianz Arena.
+            </p>
+            <iframe
+                title="ALLIANZ ARENA, MUNICH - ALEMANIA"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.3673727153796!2d11.622132476091714!3d48.2188001455035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7385128a251f%3A0xed4d60428e32c423!2sAllianz%20Arena!5e0!3m2!1ses-419!2ses!4v1734294936541!5m2!1ses-419!2ses"
+                width="800"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </body>
+</html>

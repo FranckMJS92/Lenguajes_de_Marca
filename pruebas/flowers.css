@@ -1,0 +1,9 @@
+.flower__love {
+    --love: #1aaa15;
+    --line-w: 1.5vmin;
+    position: absolute;
+    bottom: 12vmin;
+    left: -7vmin;
+    display: flex;
+    flex-direction: column;
+}

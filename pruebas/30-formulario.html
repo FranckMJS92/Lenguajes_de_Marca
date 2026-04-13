@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            body {
+                font: 1.1rem 'Segoe UI', sans-serif;
+            }
+            h1 {
+                text-align: center;
+            }
+            form {
+                padding: 30px;
+                max-width: 800px;
+                margin: 40px auto;
+                background: #f8f8f8;
+                border: 1px solid #ddd;
+                color: #555;
+            }
+            input, textarea, select {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: 4px 8px;
+                font: 1.1rem 'Segoe UI', sans-serif;
+                width: 100%;
+                margin-bottom: 20px;
+                resize:none;
+            }
+            :focus {
+                background: lavender;
+            }
+            :required {
+                border: 2px solid red;
+            }
+            .fila {
+                display: flex; 
+                gap: 20px;
+            }
+            .columna {
+                width: 100%
+            }
+            input[type='submit']{
+                width: auto;
+                border: none;
+                padding: 10px 25px;
+                background-color: #64B187;
+                color: white;
+                box-shadow: 0 1px 3px #888; 
+                margin: 0;
+            }
+            
+            input[type='submit']:hover {
+                background-color: #59DC94;
+                box-shadow: 0 3px 4px #888;
+                transform: translate(0, -1px);
+                
+            }
+            input[type='submit']:active {
+                background-color: #64B187;
+                box-shadow: 0 1px 3px #888;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        
+        <article>
+            
+            <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+            
+            <div class="fila">
+                <div class="columna">
+                   Nombre
+                   <input type="text" name="nombre">
+                </div>
+                <div class="columna">
+                   1º Apellido
+                   <input type="text" name="apellido1">
+                </div>
+                <div class="columna">
+                   2º Apellido
+                   <input type="text" name="apellido2">
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna">
+                    Dirección
+                    <input type="text" name="direccion">
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna">
+                    Teléfono *
+                    <input type="text" name="telefono" required>
+                </div>
+                <div class="columna">
+                   Email
+                    <input type="email" name="email">
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna">
+                    Mensaje
+                    <textarea name="mensaje"  rows="5"></textarea>
+                </div>
+            </div>
+            
+            <div class="fila">
+                <div class="columna"><input type="submit"></div>
+            </div>
+            
+            
+            </form>
+            
+            
+        </article>
+        
+        
+    </body>
+</html>

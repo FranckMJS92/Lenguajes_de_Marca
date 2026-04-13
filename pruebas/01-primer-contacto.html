@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Dentro de title se puede poner un texto que sale como cabecera de la pagina web-->
+        <title>Documento HTML</title>
+        <link rel="stylesheet" href="estilo.css" />
+        /*Reglas de estilo CSS en style*/
+        <style>
+            /*Formato a etiquetas "a"*/
+            a {
+                color: tomato;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            /*Fondo de imagen*/
+            body {
+                background: url("calma.jpg");
+            }
+            /*formato personalizado linea77 
+            Selector de clase va con punto*/
+            .destacado {
+                margin: 50px;
+                font-size: 1rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- &nbsp; -> 3 espacios en blancor -->
+        <header>
+            Hola Mundo
+            <h1 title="Etiqueta">Francisco Lopez</h1>
+            <p>8 de cotubre del 2024</p>
+            <h2>Primera prueba de pagina web</h2>
+            <img src="madrid1.jpg" />
+        </header>
+
+        <nav>
+            <a href="https://www.upgrade-hub.com/">Upgrade Hub</a>
+            -
+            <a href="http://www.wikipedia.org">Wikipedia</a>
+            -
+            <a href="https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA">Derivando</a>
+        </nav>
+
+        <article>
+            <h3>Diseño web</h3>
+            <p><em>Este es un primer documento de HTML</em></p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, iure? Obcaecati magni illum nostrum
+                animi, aspernatur distinctio error, cum praesentium maiores dolorem perferendis labore, aliquam
+                pariatur, molestias iure alias ducimus?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                <strong
+                    >consectetur adipisicing elit. Hic similique reiciendis corrupti ipsam, tempore expedita libero
+                    minima dolor sint.</strong
+                >
+                Assumenda suscipit commodi iure consectetur ab. Ipsam saepe incidunt nostrum temporibus, ullam eius odio
+                ad eligendi quasi nam, consequatur! Beatae, soluta.
+            </p>
+            <video src="pelicula.webm" controls></video>
+
+            <p>
+                Ipsum atque debitis aspernatur, eum impedit consectetur nulla vero optio, eius reprehenderit ullam
+                quaerat numquam non amet quam fuga dolorum sed pariatur excepturi dolor a quibusdam quis. Maiores ea
+                qui, magnam dolor explicabo itaque rerum ut, possimus nihil vero officia.
+            </p>
+
+            /*Coloca una linea, se puede editar con CSS*/
+            <hr />
+
+            <p class="destacado">
+                Quaerat, optio illo laborum ullam magni, praesentium dolor totam quas eum hic atque perspiciatis,
+                mollitia necessitatibus dolorum esse nemo reiciendis tenetur consequatur fugit rem quasi, sit non quod!
+                Laborum maiores, quibusdam cumque cum esse dolor distinctio vel molestias nisi vero.
+            </p>
+            <p>
+                Dolorem voluptatum perspiciatis, possimus rem, molestias voluptate in, sequi molestiae porro tenetur
+                laboriosam! Possimus eaque illo, quibusdam inventore aspernatur labore aliquam quia quod id, ab suscipit
+                nobis consequuntur enim ipsa illum fugit veniam quam molestias. Numquam deserunt reiciendis, odit
+                commodi.
+            </p>
+            <p>
+                Veniam ducimus est et enim animi, molestias similique dicta nobis esse culpa! Aut consequatur numquam,
+                obcaecati quos fuga omnis autem velit quo sequi nam rerum, illum, dolorem ducimus repellat? Pariatur
+                assumenda, natus eos atque perferendis quo, nemo dolor at dolore.
+            </p>
+        </article>
+        <form action="enviar.php" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="mensaje" placeholder="Consulta" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tablas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        h1, h2 {
+            margin: 30px 0 ;
+            text-align: center;
+        }
+        
+        #primera {
+            width: 1000px;
+            margin: auto;
+            /* border: 3px orange dotted; */
+            border-collapse: separate;
+            border-spacing: 10px;
+            background: #eee;
+        }
+        #primera td, #primera th {
+            padding: 5px 10px;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid lightblue;
+            background: white;
+        }
+        
+        
+        #segunda {
+            width: 1200px;
+            margin: 0 auto 50px;
+            border-collapse: collapse;
+            
+        }
+        
+        #segunda td {
+            padding: 5px 20px;
+            border-bottom: 1px solid #999;
+        }
+        #segunda tr:first-child td {  /* primera fila */
+            font-weight: bold;
+            color: navy;
+            text-align: center;
+        }
+        #segunda tr:last-child td {   /* ultima fila */
+            font-style: italic;
+        }
+        #segunda tr:nth-child(3) td {   /* tercera fila */
+            color: red;
+        }
+        #segunda tr:nth-child(even) td { /* filas pares */
+            background: #eee;
+        }
+        #segunda tr:nth-child(odd) td { /* filas impares */
+            background: #f8f8f8;
+        }
+        
+        #segunda td:first-child {   /*  primera columna */
+            border: 1px solid #999;
+        }
+        #segunda td:last-child {   /*  ultima columna */
+            text-align: right;
+        }
+        #segunda td:nth-child(2) {   /*  segunda columna */
+            text-align: center;
+        }
+        
+        #segunda tr:nth-child(2) td:nth-child(3) { /* segunda fila ytercera columna */
+            background: orange;
+        }
+        
+        
+        
+        
+        
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Tablas</h1>
+    </header>
+
+
+    <article>
+        <h2>Primera tabla</h2>
+
+
+        <table id="primera">
+           <tr>
+               <th>Lorem ipsum.</th>
+               <th>Alias, voluptate!</th>
+               <th>Illum, accusantium.</th>
+               <th>Nihil, beatae.</th>
+           </tr>
+            <tr>
+                <td></td>
+                <td>Iure magnam, sit.</td>
+                <td>Aliquam, delectus, minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam assumenda ad dicta voluptatem, libero nostrum. Dolores eum perferendis iste necessitatibus similique, nam accusantium cupiditate beatae ex, voluptatem molestiae, veniam obcaecati.</td>
+                <td>Omnis, natus, aspernatur?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor.</td>
+                <td>Sint, praesentium, tempora.</td>
+                <td></td>
+                <td>Debitis, excepturi illum?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor.</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quae fugit culpa vitae, maxime optio, voluptates nihil facilis quis quaerat, et pariatur nam quisquam! Nostrum tempore minima at, eveniet aspernatur.Ab facilis, accusantium.</td>
+                <td>Alias, quia, dolorem.</td>
+                <td>Ab soluta, tenetur!</td>
+            </tr>
+        </table>
+           
+           <h2>segunda tabla</h2>
+           
+        <table id="segunda">
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Rerum deleniti modi vel quos.</td>
+                <td>Ipsam delectus, rerum neque amet.</td>
+                <td>Nesciunt voluptatibus ipsam labore iusto.</td>
+                <td>Incidunt maiores, repellat? Porro, deleniti!</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Corrupti aliquid possimus neque eaque?</td>
+                <td>Molestiae praesentium nam voluptates eveniet?</td>
+                <td>Dignissimos repellendus tempore quaerat sapiente.</td>
+                <td>Eveniet totam nobis aperiam laudantium.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Eum labore quis rerum culpa.</td>
+                <td>Beatae obcaecati, quos tempore explicabo.</td>
+                <td>Id, iusto libero fugiat praesentium.</td>
+                <td>Explicabo eaque quam temporibus omnis.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Et cumque, deleniti commodi rerum!</td>
+                <td>Ut molestias quae, doloribus est!</td>
+                <td>Porro illum repudiandae, quidem placeat.</td>
+                <td>Aut dolorum provident doloremque error.</td>
+            </tr>
+        </table>
+            
+            
+            
+            
+            
+        </article>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Iframe Mapa</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Segoe UI", sans-serif;
+                max-width: 900px;
+                margin: auto;
+            }
+            #mapa {
+                width: 100%;
+                aspect-ratio: 4/3;
+                border: 2px solid #aaa;
+            }
+            a {
+                text-decoration: none;
+                background: #5c99c5;
+                color: #eee;
+                padding: 10px 25px;
+                margin: 0 10px;
+                border-radius: 8px;
+                box-shadow: 0 1px 2px #999;
+            }
+            a:hover {
+                box-shadow: 0 2px 3px #888;
+                background: #47AAF0;
+                color: #fff;
+            }
+            .fa-solid {
+                color: white;
+                font-size: 0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Iframe Mapa</h1>
+        </header>
+
+        <article>
+            <p>
+                <a
+                    target="roma"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7063.267925635728!2d12.474449881794808!3d41.8984840894347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604f678640a9%3A0xcad165fa2036ce2c!2sPanteon%20de%20Roma!5e0!3m2!1ses!2ses!4v1736873944961!5m2!1ses!2ses"
+                    ><i class="fa-solid fa-landmark"></i> Panteón</a
+                >
+
+                <a
+                    target="roma"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064.164303491659!2d12.486252558403706!3d41.890379097314224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseo%20de%20Roma!5e0!3m2!1ses!2ses!4v1736874182923!5m2!1ses!2ses"
+                    ><i class="fa-solid fa-dungeon"></i> Coliseo</a
+                >
+
+                <a
+                    target="roma"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.4830857269562!2d12.481519779563866!3d41.901212244249216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sFontana%20di%20Trevi!5e0!3m2!1ses!2ses!4v1736874514547!5m2!1ses!2ses"
+                    ><i class="fa-solid fa-hand-peace"></i> Fontana di Trevi</a
+                >
+            </p>
+
+            <iframe
+                id="mapa"
+                name="roma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7063.267925635728!2d12.474449881794808!3d41.8984840894347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604f678640a9%3A0xcad165fa2036ce2c!2sPanteon%20de%20Roma!5e0!3m2!1ses!2ses!4v1736873944961!5m2!1ses!2ses"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </body>
+</html>

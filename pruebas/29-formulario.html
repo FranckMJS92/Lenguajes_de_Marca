@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Formulario</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #f8f8f8;
+        font: 1.1rem 'Segoe UI', sans-serif;
+    }
+    .grande {
+        width: 400px;
+    }
+    .pequenio {
+        width: 90px;
+    }
+    table {
+        border-spacing: 8px;
+    }
+    td:first-child {
+        text-align: right;
+        vertical-align: top;
+    }
+    /* form {
+        background: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ddd
+    } */
+    textarea {
+        resize: none;
+    }
+    input, textarea, select {
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font: 1.1rem 'Segoe UI', sans-serif;
+    }
+    :focus {
+        background: lavender;
+    }
+    :required {
+        border: 2px solid red;
+    }
+    input[type='file'] {
+        border: none;
+    }
+    input[type='submit']{
+        border: none;
+        padding: 10px 25px;
+        background-color: #64B187;
+        color: white;
+        box-shadow: 0 1px 3px #888;        
+    }
+    input[type='submit']:hover {
+        background-color: #59DC94;
+        box-shadow: 0 3px 4px #888;
+        transform: translate(0, -1px);
+    }
+    input[type='submit']:active {
+        background-color: #64B187;
+        box-shadow: 0 1px 3px #888;
+    }
+    
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Formulario</h1>
+</header>
+
+<article>
+
+<form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+    
+<table>
+    <tr>
+        <td>Apellidos</td>
+        <td><input type="text" name="apellidos" class="grande" autofocus></td>
+    </tr>
+    <tr>
+        <td>Código Postal</td>
+        <td><input type="text" name="cp" class="pequenio" maxlength="5" minlength="5"></td>
+    </tr>
+    <tr>
+        <td>Teléfono *</td>
+        <td><input type="text" name="telefono" class="grande" placeholder="(+34) 91 234 56 78" required></td>
+    </tr>
+    <tr>
+        <td>Provincia</td>
+        <td>
+           <!-- <select required name="provincia" class="form-control"> -->
+            <select name="provincia" class="form-control">
+                <option value="">Elige Provincia</option>
+                <option value="Álava/Araba">Álava/Araba</option>
+                <option value="Albacete">Albacete</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Almería">Almería</option>
+                <option value="Asturias">Asturias</option>
+                <option value="Ávila">Ávila</option>
+                <option value="Badajoz">Badajoz</option>
+                <option value="Baleares">Baleares</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Burgos">Burgos</option>
+                <option value="Cáceres">Cáceres</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Cantabria">Cantabria</option>
+                <option value="Castellón">Castellón</option>
+                <option value="Ceuta">Ceuta</option>
+                <option value="Ciudad Real">Ciudad Real</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Gerona/Girona">Gerona/Girona</option>
+                <option value="Granada">Granada</option>
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Huesca">Huesca</option>
+                <option value="Jaén">Jaén</option>
+                <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Las Palmas">Las Palmas</option>
+                <option value="León">León</option>
+                <option value="Lérida/Lleida">Lérida/Lleida</option>
+                <option value="Lugo">Lugo</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Melilla">Melilla</option>
+                <option value="Murcia">Murcia</option>
+                <option value="Navarra">Navarra</option>
+                <option value="Orense/Ourense">Orense/Ourense</option>
+                <option value="Palencia">Palencia</option>
+                <option value="Pontevedra">Pontevedra</option>
+                <option value="Salamanca">Salamanca</option>
+                <option value="Segovia">Segovia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Soria">Soria</option>
+                <option value="Tarragona">Tarragona</option>
+                <option value="Tenerife">Tenerife</option>
+                <option value="Teruel">Teruel</option>
+                <option value="Toledo">Toledo</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Valladolid">Valladolid</option>
+                <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                <option value="Zamora">Zamora</option>
+                <option value="Zaragoza">Zaragoza</option>
+              </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Ciudad</td>
+        <td><input type="text" name="ciudad" class="grande" value="Madrid"></td>
+    </tr>
+    <tr>
+        <td>Clave</td>
+        <td><input type="password" name="clave" class="pequenio"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>
+            <input type="email" name="mail" class="grande" autocomplete="off">
+        </td>
+    </tr>
+    <tr>
+        <td>Comentarios</td>
+        <td>
+            <textarea name="comentarios" class="grande" rows="5"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>Edad</td>
+        <td>
+            <input type="number" name="edad" class="pequenio" max="65" min="18" value="25">
+        </td>
+    </tr>
+    <tr>
+        <td>Latas</td>
+        <td>
+            <input type="number" name="latas" class="pequenio" step="6" min="6" value="12">
+        </td>
+    </tr>
+    <tr>
+        <td>Ingredientes</td>
+        <td>
+            <label>
+                <input type="checkbox" name="pimiento" value="si"> Pimiento
+            </label><br>
+            <label>
+                <input type="checkbox" name="aceitunas" value="si"> Aceitunas
+            </label><br>
+            <label>
+                <input type="checkbox" name="atun" value="si"> Atún
+            </label><br>
+            <label>
+                <input type="checkbox" name="queso" value="si"> Queso
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>Método envío</td>
+        <td>
+            <label>
+                <input type="radio" name="envio" value="tienda" checked> Recogida en tienda
+            </label><br>
+            <label>
+                <input type="radio" name="envio" value="correos"> Correos 72h
+            </label><br>
+            <label>
+                <input type="radio" name="envio" value="seur"> Seur 24h
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>Tipo habitación</td>
+        <td>
+            <select name="habitacion">
+                <option value="1i">Individual</option>
+                <option value="2m" selected>Doble matrimonio</option>
+                <option value="2i">Doble 2 camas</option>
+                <option value="3mi">Triple matrimonio + individual</option>
+                <option value="3i">Triple 3 individuales</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Color</td>
+        <td>
+            <input type="color" name="color" value="#ff3333">
+        </td>
+    </tr>
+    <tr>
+        <td>Foto</td>
+        <td>
+            <input type="file" name="foto" accept="application/pdf, image/*" multiple>
+        </td>
+    </tr>
+    <tr>
+        <td>Fecha</td>
+        <td>
+            <input type="date" name="fecha" min="2025-03-14" max="2025-04-20" value="2025-03-27">
+        </td>
+    </tr>
+    <tr>
+        <td>Hora</td>
+        <td>
+            <input type="time" name="hora" min="15:00" max="20:30" value="17:45">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+        <input type="hidden" name="destinatario" value="Contacto masrural">
+        <input type="submit" value="Comprobar">
+        </td>
+    </tr>
+</table>
+    
+    
+</form>
+
+</article>
+
+</body>
+</html>
